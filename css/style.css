@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 1200px;
+    background: blue;
+}
+
+header {
+    width: 1400px;
+    height: 400px;
+    margin: 0 auto;
+    background: green;
+}
+
+.lang {
+    width: 100%;
+    height: 20px;
+}
+
+.pic {
+    width: 100%;
+    height: 346px;
+}
+.men {
+    width: 76%;
+    height: 34px;
+    margin: 0 auto;
+}
+
+ul.menu {
+     margin: 0;
+     padding: 0;
+     display: inline-block;
+     border-radius: 10px;
+     -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+}
+
+ul.menu li {
+    float: left;
+    list-style: none;
+    width: 150px;
+    border-radius: 10px;
+    background: #000000;
+    position: relative;
+}
+
+ul.menu li a {
+    color: white;
+    display: block;
+    font-family: Arial;
+    font-size: 13px;
+    padding: 8px 20px 10px;
+    text-decoration: none;
+}
+
+ul.menu li a:hover {
+    background-color: #ad0e00;
+    border-radius: 10px;
+}
+
+ul.menu li:first-child a:hover {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+
+/*Выпадающее меню*/
+ul.menu li ul {
+    display: none;
+}
+
+ul.menu li:hover ul {
+    display: block;
+    position: absolute;
+    top: 34px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    z-index: 1000;
+}
+
+ul.menu li:hover ul li {
+    float: none;
+    width: 150px;
+    border-right: none;
+}
+
+ul.menu li:hover ul li a {
+    border-right: none;
+    padding: 6px 20px 8px;
+}
+
+ul.menu li:hover ul li a:hover {
+    background-color: #ad0e00;
+    border-radius: 10px;
+}
+
+ul.menu li:hover ul li:first-child a:hover {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+.main {
+    width: 1460px;
+    height: 750px;
+    margin: 0 auto;
+    border-radius: 25px;
+    background: #adff2f;
+}
+
+footer {
+    width: 1400px;
+    height: 50px;
+    margin: 0 auto;
+    background: green;
+}
+
